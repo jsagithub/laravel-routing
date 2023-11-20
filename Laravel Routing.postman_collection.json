@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "520dcbc0-39d0-4f53-9a8e-b729638da681",
+		"name": "Laravel Routing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31155387"
+	},
+	"item": [
+		{
+			"name": "greeting_web_route",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/greeting",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"greeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "greeting_api_route",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/greeting",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"greeting"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
