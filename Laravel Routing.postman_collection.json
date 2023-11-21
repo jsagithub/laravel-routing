@@ -50,6 +50,236 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "option resource",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/resource",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resource"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "match method",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/matchMethod",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"matchMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "match method",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/matchMethod",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"matchMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "match method",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/matchMethod",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"matchMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "any",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/any",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"any"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "any",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/any",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"any"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "any",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/any",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"any"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "any",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/any",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"any"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "any",
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/any",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"any"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "any",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/any",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"any"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
