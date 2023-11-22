@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserProfileController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -43,3 +44,22 @@ Route::match(['get', 'post'], '/matchMethod', function () {
 Route::any('/any', function () {
     return 'This route handles requests with any HTTP method.';
 });
+
+Route::get('/dependencyInjection', function (Request $request) {
+return $request;
+});
+
+Route::get('/user/{id}', function (string $id) {
+    return 'User '.$id;
+});
+
+//Regular Expression Constraints
+Route::get('/category/{category}', function (string $category) {
+    return 'Category is '.$category;
+})->whereIn('category', ['movie', 'song', 'painting']);
+
+//Naming Routes
+Route::get(
+    '/profile',
+    [UserProfileController::class, 'show']
+)->name('profile');
