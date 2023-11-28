@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserProfileController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -63,3 +64,15 @@ Route::get(
     '/profile',
     [UserProfileController::class, 'show']
 )->name('profile');
+
+//Route Groups
+Route::controller(OrderController::class)->group(function () {
+    Route::get('/orders/{id}', 'show');
+    Route::get('/orders', 'index');
+});
+
+Route::prefix('admin')->group(function () {
+    Route::get('/users', static function () {
+        return 'Admin Users';
+    });
+});
