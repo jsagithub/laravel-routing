@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserProfileController;
+use App\Models\Contacts;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -75,4 +77,9 @@ Route::prefix('admin')->group(function () {
     Route::get('/users', static function () {
         return 'Admin Users';
     });
+});
+
+//Route Model Binding
+Route::get('/contacts/{contact}', function (Contacts $contact) {
+    return $contact->getEmail();
 });
