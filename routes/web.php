@@ -28,6 +28,10 @@ Route::redirect('/welcome', '/user');
 
 Route::view('/showName', 'showName', ['name' => 'Taylor']);
 
+Route::middleware('throttle:60,1')->group(function () {
+    Route::get('/exampleUser', [UserController::class, 'index']);
+});
+
 Route::fallback(function () {
     return view('welcome');
 });
