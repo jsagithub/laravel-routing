@@ -482,6 +482,30 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Route Model Binding",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contacts/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contacts",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
