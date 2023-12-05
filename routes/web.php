@@ -27,3 +27,7 @@ Route::get('/user', [UserController::class, 'index']);
 Route::redirect('/welcome', '/user');
 
 Route::view('/showName', 'showName', ['name' => 'Taylor']);
+
+Route::fallback(function () {
+    return view('welcome');
+});
