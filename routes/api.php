@@ -81,5 +81,5 @@ Route::prefix('admin')->group(function () {
 
 //Route Model Binding
 Route::get('/contacts/{contact}', function (Contacts $contact) {
-    return $contact->getEmail();
+    return $contact->email;
 });
